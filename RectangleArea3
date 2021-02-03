@@ -1,0 +1,31 @@
+/* Raswanth 
+ * class: RectangleArea3
+ * Execution of the program: calculates and displays the area of a rectangle based on the values entered by the user
+ */
+/** 
+ * The class, RectangleArea3 is an application that 
+ * calculates and displays the area of a rectangle 
+ * based on the values entered by the user
+ */
+import java.util.Scanner; 
+public class RectangleArea3 {
+  //start class definition 
+  public static void main(String[] args) {
+    //create the object 
+    Scanner input = new Scanner(System.in);
+    //declare and initialize the variables
+    int length; //longer side of the rectangle 
+    int width; //shorter side of the rectangle 
+    int area; //calculated area of rectangle 
+    //get the inputs from the user 
+    System.out.print("Enter the length: "); 
+    length = input.nextInt(); 
+    System.out.print("Enter the width: "); 
+    width = input.nextInt();
+    input.close(); 
+    //make the calculations
+    area = length * width; 
+    //display the results 
+    System.out.println("Area of rectangle: " + area); 
+  }
+} //end class definition
