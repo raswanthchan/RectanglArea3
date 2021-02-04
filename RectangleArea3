@@ -13,19 +13,21 @@ public class RectangleArea3 {
   public static void main(String[] args) {
     //create the object 
     Scanner input = new Scanner(System.in);
-    //declare and initialize the variables
+    //declare variables
     int length; //longer side of the rectangle 
     int width; //shorter side of the rectangle 
     int area; //calculated area of rectangle 
-    //get the inputs from the user 
-    System.out.print("Enter the length: "); 
+    //initialize variables and get the inputs from the user 
+    System.out.print("Enter the length(cm): "); 
     length = input.nextInt(); 
-    System.out.print("Enter the width: "); 
+    System.out.print("Enter the width(cm): "); 
     width = input.nextInt();
     input.close(); 
     //make the calculations
     area = length * width; 
     //display the results 
-    System.out.println("Area of rectangle: " + area); 
+    System.out.println("Entered length: " + length + " cms");
+    System.out.println("Entered width: " + length +  " cms");
+    System.out.println("Area of rectangle: " + area + " cms"); 
   }
 } //end class definition
